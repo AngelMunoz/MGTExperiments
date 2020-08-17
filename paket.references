@@ -1,0 +1,6 @@
+group Game
+    MonoGame.Extended
+    MonoGame.Extended.Content.Pipeline
+    MonoGame.Extended.Tiled
+    MonoGame.Framework.DesktopGL
+    MonoGame.Content.Builder.Task

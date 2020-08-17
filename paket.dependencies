@@ -1,0 +1,12 @@
+version 5.249.2
+source https://api.nuget.org/v3/index.json
+
+storage: none
+group Game
+    source https://api.nuget.org/v3/index.json
+    framework: netcoreapp3.1
+    nuget MonoGame.Extended 3.7.0
+    nuget MonoGame.Extended.Content.Pipeline 3.7.0
+    nuget MonoGame.Extended.Tiled 3.7.0
+    nuget MonoGame.Framework.DesktopGL 3.8.0.1641
+    nuget MonoGame.Content.Builder.Task 3.8.0.1641

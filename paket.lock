@@ -1,0 +1,24 @@
+STORAGE: NONE
+
+GROUP Game
+RESTRICTION: == netcoreapp3.1
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    MonoGame.Content.Builder.Task (3.8.0.1641)
+    MonoGame.Extended (3.7)
+      Newtonsoft.Json (>= 11.0.2)
+    MonoGame.Extended.Content.Pipeline (3.7)
+      MonoGame.Extended (>= 3.7)
+      MonoGame.Extended.Tiled (>= 3.7)
+      MonoGame.Framework.Content.Pipeline.Portable (>= 3.6.0.1625)
+      Newtonsoft.Json (>= 11.0.2)
+    MonoGame.Extended.Graphics (3.7)
+      MonoGame.Extended (>= 3.7)
+    MonoGame.Extended.Tiled (3.7)
+      MonoGame.Extended (>= 3.7)
+      MonoGame.Extended.Graphics (>= 3.7)
+    MonoGame.Framework.Content.Pipeline.Portable (3.7.1.189)
+      MonoGame.Framework.Portable (>= 3.7.1.189)
+    MonoGame.Framework.DesktopGL (3.8.0.1641)
+    MonoGame.Framework.Portable (3.7.1.189)
+    Newtonsoft.Json (12.0.3)
