@@ -10,12 +10,10 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\packages\game\MonoGame.Extended\lib\netstandard2.0\MonoGame.Extended.dll
+/reference:..\packages\game\MonoGame.Extended.Content.Pipeline\tools\MonoGame.Extended.Content.Pipeline.dll
 /reference:..\packages\game\MonoGame.Extended.Tiled\lib\netstandard2.0\MonoGame.Extended.Tiled.dll
-/reference:..\packages\game\MonoGame.Extended.Content.Pipeline\lib\netstandard2.0\MonoGame.Extended.Content.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
-
 
 #begin ball.png
 /importer:TextureImporter

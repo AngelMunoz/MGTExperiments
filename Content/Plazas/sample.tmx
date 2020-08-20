@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="30" height="10" tilewidth="48" tileheight="48" infinite="0" nextlayerid="7" nextobjectid="14">
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="30" height="10" tilewidth="48" tileheight="48" infinite="0" nextlayerid="9" nextobjectid="15">
  <tileset firstgid="1" name="floor" tilewidth="48" tileheight="48" tilecount="192" columns="16">
-  <image source="./TiledAssets/floor.png" width="768" height="576"/>
+  <image source="TiledAssets/floor.png" width="768" height="576"/>
  </tileset>
  <tileset firstgid="193" name="decorations" tilewidth="48" tileheight="48" tilecount="256" columns="16">
-  <image source="./TiledAssets/decorations.png" width="768" height="768"/>
+  <image source="TiledAssets/decorations.png" width="768" height="768"/>
  </tileset>
  <tileset firstgid="449" name="terrain" tilewidth="48" tileheight="48" tilecount="128" columns="8">
-  <image source="./TiledAssets/terrain.png" width="384" height="768"/>
+  <image source="TiledAssets/terrain.png" width="384" height="768"/>
  </tileset>
  <tileset firstgid="577" name="walls" tilewidth="48" tileheight="48" tilecount="240" columns="16">
-  <image source="./TiledAssets/walls.png" width="768" height="720"/>
+  <image source="TiledAssets/walls.png" width="768" height="720"/>
  </tileset>
  <layer id="1" name="Terrain" width="30" height="10" locked="1">
   <data encoding="csv">
@@ -68,13 +68,53 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,641,626,642
 </data>
  </layer>
+ <layer id="8" name="Obstacles" width="30" height="10" visible="0" locked="1" tintcolor="#ff0000">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,449,449,449,
+449,449,449,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,449,199,449,
+0,449,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,199,0,0,0,0,0,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,449,449,449,449,449,449,449,449,449,449,449,449,449,449,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,449,0,0,0,0,0,0,0,0,0,0,0,0,449,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,449,0,0,0,0,0,0,0,0,0,0,0,0,449,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,449,0,0,0,0,0,0,0,0,0,0,0,0,449,0,0,0,449,199,449,
+0,0,0,0,0,0,0,0,0,0,449,449,449,449,449,449,449,449,449,449,449,449,449,449,0,0,0,449,449,449
+</data>
+ </layer>
  <objectgroup color="#ff0004" id="6" name="Borders" locked="1">
-  <object id="2" x="489.44" y="246.47" width="650.4" height="221.43"/>
-  <object id="5" x="1296.82" y="0" width="141.24" height="477.41"/>
-  <object id="10" x="61.66" y="117.82" width="19.33" height="21.73"/>
+  <object id="2" x="489.44" y="246.47" width="650.4" height="221.43">
+   <properties>
+    <property name="Bounces" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="5" x="1296.82" y="0" width="141.24" height="477.41">
+   <properties>
+    <property name="Bounces" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="10" x="61.66" y="117.82" width="19.33" height="21.73">
+   <properties>
+    <property name="Bounces" type="bool" value="true"/>
+   </properties>
+  </object>
   <object id="11" x="11.75" y="49.81" width="119.45" height="68.26">
+   <properties>
+    <property name="Bounces" type="bool" value="true"/>
+   </properties>
    <ellipse/>
   </object>
-  <object id="12" x="12.811" y="48.3324" width="118.065" height="32.4642"/>
+  <object id="12" x="12.811" y="48.3324" width="118.065" height="32.4642">
+   <properties>
+    <property name="Bounces" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup color="#8e6299" id="7" name="Objects">
+  <object id="14" x="144.111" y="287.995" width="48" height="48">
+   <properties>
+    <property name="player" type="int" value="1"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
